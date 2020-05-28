@@ -2,6 +2,14 @@
 
 This library supports Span traces of HTTP calls and distributed traces with [Guzzle](https://github.com/guzzle/guzzle).
 
+## Installation
+
+1) Install via [composer](https://getcomposer.org/)
+
+    ```shell script
+    composer require pccomponentes/apm-guzzle
+    ```
+
 ## Usage
 
 In all cases, an already created instance of [ElasticApmTracer](https://github.com/zoilomora/elastic-apm-agent-php) is assumed.

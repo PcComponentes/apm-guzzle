@@ -16,6 +16,10 @@ final class ElasticApmMiddleware
     {
         return static function (callable $handler) use ($elasticApmTracer) {
             return static function (Request $request, array $options) use ($handler, $elasticApmTracer) {
+                if (false === $elasticApmTracer->active()) {
+                    return $handler($request, $options);
+                }
+
                 $name = \sprintf(
                     '%s %s',
                     $request->getMethod(),

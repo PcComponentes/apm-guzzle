@@ -15,11 +15,11 @@
     }
   },
   "require": {
-    "php": "^7.4",
+    "php": "^7.4 | ^8.0",
     "guzzlehttp/guzzle": "^6.5 | ^7.0",
     "zoilomora/elastic-apm-agent-php": "^0.1 | ^1.0"
   },
   "require-dev": {
-    "pccomponentes/coding-standard": "^1.0"
+    "pccomponentes/coding-standard": "^1.2.3"
   }
 }
